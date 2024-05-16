@@ -1,0 +1,26 @@
+.body {
+  background-color: grey;
+}
+
+.container {
+  margin-top: 100px;
+  
+}
+
+.esikaas {
+  height: 500px;
+  padding-left: 440px;
+  
+}
+
+
+.paneel {
+  background-color: gray;
+  border-radius: 10px;
+  
+}
+
+.h1 {
+  padding-bottom: 30px;
+}
+
