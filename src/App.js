@@ -42,7 +42,7 @@ function App() {
   const moreBooksJsx = moreBooks.map((name) => (
     <div>
     <Raamat title={name.title} author={name.author} genre={name.genre} notice={name.notice} picture={name.picture} />
-      <img className="coverPic img-fluid" src={name.picture}  /> 
+      <img className="coverPic img-fluid" src={name.picture} alt={name.picture} /> 
     </div>
     )
   )
