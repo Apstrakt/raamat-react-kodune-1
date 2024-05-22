@@ -4,16 +4,15 @@ import anka from './covers/AnnaKarenina.jpg'
 import aow from './covers/ArtofWar.jpg'
 import cap from './covers/CrimeAndPunishment.jpg'
 import dune from './covers/Dune.jpg'
-
 import lotr from './covers/LOTR.jpg'
 import modi from './covers/MobyDick.jpg'
-
 import nima from './covers/NimeMarmortahvlil.jpg'
-
 import pipr from './covers/PrideAndPredjudice.jpg'
 import grga from './covers/TheGreatGatsby.jpg'
 import todoi from './covers/TodeJaOigus.jpg'
-
+import natr from './covers/Naksitrallid.jpg'
+import pipi from './covers/Pipi.jpg'
+import gof from './covers/GobletOfFire.jpg'
 
 const moreBooks = [
   {
@@ -21,23 +20,32 @@ const moreBooks = [
     author: 'Astrid Lindgren',
     genre: 'Children`s book, Adventure',
     notice: 'No picture available',
+    picture: pipi,
   },
    {
     title: ' Jälle need Naksitrallid',
     author: 'Eno Raud',
     genre: 'Children`s book, Adventure',
     notice: 'No picture available',
+    picture: natr,
    },
     {
     title: 'Harry Potter and the Goblet of Fire',
     author: 'J. K. Rowling',
     genre: 'Fantasy',
     notice: 'No picture available',
+    picture: gof
     }
 ]
 
 function App() {
-  const moreBooksJsx = moreBooks.map((name) => <Raamat title={name.title} author={name.author} genre={name.genre} notice={name.notice} />)
+  const moreBooksJsx = moreBooks.map((name) => (
+    <div>
+    <Raamat title={name.title} author={name.author} genre={name.genre} notice={name.notice} picture={name.picture} />
+      <img className="coverPic img-fluid" src={name.picture}  /> 
+    </div>
+    )
+  )
   return (
     <div className="container App">
       <h1 className="Heading">The Library</h1>

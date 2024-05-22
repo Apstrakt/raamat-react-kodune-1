@@ -31,7 +31,7 @@ function Raamat(props) {
             <h2 className={bookStyle}>{props.title}</h2>
             <h4 className={authorStyle}>{props.author}</h4>
             <h6 className={genreStyle}>{props.genre}</h6>
-            <p className={noticeStyle}>{props.notice}</p>
+            <p  className={noticeStyle}>{props.notice}</p>
         </div>
     )
 }
