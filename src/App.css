@@ -1,26 +1,54 @@
-.body {
-  background-color: grey;
-}
 
 .container {
-  margin-top: 100px;
+  
+  background-color: rgb(46, 44, 41);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  justify-content: space-around;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(241, 74, 74, 0.445), 0 6px 20px 0 rgba(255, 231, 16, 0.692);
+}
+
+.coverPic {
+  height: 300px;
+  box-shadow: 0px 0px 0px 0px rgba(245, 218, 131, 0.445), 2px 2px 2px 0px rgba(14, 14, 13, 0.692);
   
 }
 
-.esikaas {
-  height: 500px;
-  padding-left: 440px;
+.books {
+  color: rgb(253, 197, 93);
+}
+
+.authors {
+  color: brown;
+}
+
+.genres {
+  color: rgb(146, 89, 3);
+}
+
+.notices {
+  color:rgba(248, 239, 158, 0.075)
+}
+
+.Heading {
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  padding-top: 200px;
+  text-align: center;
+}
+
+.bookPanel {
+  text-align: center;
+  justify-self: center;
+  align-items: center;
   
 }
 
 
-.paneel {
-  background-color: gray;
-  border-radius: 10px;
-  
-}
 
-.h1 {
-  padding-bottom: 30px;
-}
+
 
