@@ -1,4 +1,4 @@
-function Raamat(props) {
+function Book(props) {
     console.log(props) 
         let bookStyle = ""
         let genreStyle = ""
@@ -38,4 +38,4 @@ function Raamat(props) {
         
            
 
-export default Raamat
+export default Book
