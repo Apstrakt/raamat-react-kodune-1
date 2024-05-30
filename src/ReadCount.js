@@ -5,18 +5,18 @@ function ReadCount() {
     const clickResponseIncrease = () => {
        
         setAmount(amount + 1)
-    }
+    };
     const clickResponseDecrease = () => {
         
-        setAmount(amount - 1)
-    }
+        setAmount(0);
+    };
     
     return (
-        <>
-            <button onClick={clickResponseDecrease}>Decrease</button>
-            {amount}
-            <button onClick={clickResponseIncrease}>Increase</button>
-        </>
+        <div className="readCounter"> 
+           <div className="zeroing"> <button onClick={clickResponseDecrease}>Start over</button> </div>
+          <div classname="countAmount"> <h2>{amount}</h2> </div> 
+        <div className="addingToCount">  <button onClick={clickResponseIncrease}>Read count</button> </div>  
+        </div>
     )
 }
 

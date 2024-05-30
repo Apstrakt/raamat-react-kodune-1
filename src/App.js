@@ -5,58 +5,129 @@ import natr from './covers/Naksitrallid.jpg'
 import pipi from './covers/Pipi.jpg'
 import gof from './covers/GobletOfFire.jpg'
 import ReadCount from './ReadCount.js';
-import {useState} from 'react';
+import AddNewBook from './AddNewBook.js';
 
 
-const moreBooks = [
-  {
-    title: 'Pipi Pikksukk',
-    author: 'Astrid Lindgren',
-    genre: 'Children`s book, Adventure',
-    notice: 'No picture available',
-    picture: pipi,
-  },
-   {
-    title: ' Jälle need Naksitrallid',
-    author: 'Eno Raud',
-    genre: 'Children`s book, Adventure',
-    notice: 'No picture available',
-    picture: natr,
-   },
-    {
-    title: 'Harry Potter and the Goblet of Fire',
-    author: 'J. K. Rowling',
-    genre: 'Fantasy',
-    notice: 'No picture available',
-    picture: gof
-    }
-]
+import { useState } from 'react';
 
 function App() {
-  const [activeBook, setActiveBook] = useState(0);
+
+
+  const [books, setBooks] = useState([
+    {
+      title: 'Pipi Pikksukk',
+      author: 'Astrid Lindgren',
+      genre: 'Children`s book, Adventure',
+      picture: pipi,
+    
+    },
+    {
+      title: ' Jälle need Naksitrallid',
+      author: 'Eno Raud',
+      genre: 'Children`s book, Adventure',
+      picture: natr,
+    
+    },
+    {
+      title: 'Harry Potter and the Goblet of Fire',
+      author: 'J. K. Rowling',
+      genre: 'Fantasy',
+      picture: gof
+    
+    }
+  ]);
+
+  const [selectedBook, setSelectedBook] = useState(null);
+
+  const addBook = ({ title, author, genre, picture }) => {
+    console.log('About to add ' + title)
+    const newBook = {
+      title,
+      author,
+      genre,
+      picture,
+    };
+    
+    setBooks([...books, newBook])
+  };
+    const handleClick = (book) => {
+      setSelectedBook(book);
+    };
+
+
+
   
-  const moreBooksJsx = moreBooks.map((title1) => <Book2 title= {title1.title} />)
+
+ 
+  
+
+return (
+ 
+ <div className="container">
+   
+   <h1 className="Heading">The Library</h1>
+   <div className="leftPanel AppL col-6 ">
+      <div classname="addBooks">
+        <AddNewBook addBook={addBook} />
+      </div>
+      <div className="clickable">
+          {
+            books.map((book, index) => (
+              <div key={index} onClick={() => handleClick(book)} style={{ cursor: 'pointer' }}>
+                <Book booksReal={book} />
+              </div>
+            ))
+          }
+      </div>
+     
+   </div>
+     
+     
+    <div className="rightPanel AppR col-6">
+      {selectedBook ? (
+          <Book2
+          title={selectedBook.title}
+          author={selectedBook.author}
+          genre={selectedBook.genre}
+          picture={selectedBook.picture}
+          />
+          
+        ) : (
+          <div className="askForDetails"><h4>Select a book to see details</h4></div>
+        )}
+   </div>
+ </div>
+);
+}
+        
+  
+
+
+   
    
 
-  return (
-    <div className="container ">
-      <h1 className="Heading">The Library</h1>
-      <div className="leftPanel AppL">
-        {moreBooksJsx}
-                <button onClick={() => setActiveBook(activeBook) + 1} >Next</button>
-      </div>
-      <div className="rightPanel AppR">
-        <Book title={moreBooks[activeBook].title} author={moreBooks[activeBook.author]} genre={moreBooks[activeBook.genre]} picture={moreBooks[activeBook.picture]} /> 
+
         
-        <ReadCount />
+          
         
-      </div>
       
-     
+
+
+
+        
+       
+       
+        
+
+
+       
+          
       
- 
-    </div>
-  );
-}
+        
+        
+        
+      
 
 export default App;
+      
+ 

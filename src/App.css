@@ -1,74 +1,159 @@
 
 .container {
-  
-  
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 25px;
-  justify-content: space-around;
-  align-content: center;
+  grid-template-rows: 0fr 1fr 1fr;
   justify-content: center;
+  grid-gap: 25px;
   
 }
-
 .AppL {
-  background-color: rgb(219, 195, 158);
-  box-shadow: 0 4px 8px 0 rgba(241, 74, 74, 0.445), 0 6px 20px 0 rgba(255, 231, 16, 0.692);
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.AppR {
-  background-color: rgb(219, 195, 158);
-  box-shadow: 0 4px 8px 0 rgba(241, 74, 74, 0.445), 0 6px 20px 0 rgba(255, 231, 16, 0.692);
-  grid-column: 3;
-  grid-row: 2;
   
-  padding-top: 75px;
-  padding-left: 50px;
+  background-color: rgb(219, 195, 158);
+  box-shadow: 0 4px 8px 0 rgba(241, 74, 74, 0.445), 0 6px 20px 0 rgba(255, 231, 16, 0.692);
+  width: 500px;
+  grid-column: 2/3;
+  
+  
 }
 
-.coverPic {
-  height: 300px;
-  box-shadow: 0px 0px 0px 0px rgba(245, 218, 131, 0.445), 2px 2px 2px 0px rgba(14, 14, 13, 0.692);
-  ;
+.addBooks {
+  justify-self: center;
+  padding-top: 1rem;
+  padding-left: 2rem;
 }
 
-.books {
-  color: rgb(116, 89, 40);
+.clickable {
+  padding-left: 5rem;
 }
 
-.authors {
+
+.rightPanel {
+  display: flex;
+  flex-wrap: wrap;
+  
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  
+
+
+}
+.AppR {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  background-color: rgb(219, 195, 158);
+  box-shadow: 0 4px 8px 0 rgba(241, 74, 74, 0.445), 0 6px 20px 0 rgba(255, 231, 16, 0.692);
+  grid-column: 3/4;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.askForDetails {
+  justify-self: center;
+  text-align: center;
+  padding-left: 1rem;
+  padding-top: 2rem;
   color: brown;
 }
 
+.readCounter {
+  padding-top: 10px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.zeroing{
+  padding: 5px;
+  padding-right: 10px;
+}
+
+.countAmount {
+  padding: 5px;
+  color: brown;
+  
+}
+
+.addingToCount {
+  padding: 5px;
+  padding-left: 10px;
+}
+.coverPic {
+  height: 20rem;
+  padding: 10px;
+  justify-self: center;
+}
+.books {
+  align-self: flex-start;
+  color: rgb(116, 89, 40);
+  padding: 5px;
+}
+.authors {
+  
+  align-self: center;
+  color: brown;
+  padding: 5px;
+}
 .genres {
+  
+  align-self: center;
   color: rgb(146, 89, 3);
+  padding: 5px;
 }
-
-.notices {
-  color:rgba(248, 239, 158, 0.075)
-}
-
 .Heading {
+  padding-top: 50px;
   color: rgb(31, 28, 25);
-  display: inline-block;
-  padding-top: 200px;
-  text-align: center;
-  justify-content: center;
+  height: 150px;
   grid-column: 2/3;
-  grid-row: 1;
+}
+h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
-.bookPanel {
+ /*.bookPanel {
   text-align: center;
   justify-self: center;
   align-items: center;
   
-}
+} */
+
+
+    
+
+
+  
+  
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  

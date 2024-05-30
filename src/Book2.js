@@ -1,10 +1,25 @@
-function Book2({title, author, genre, picture}) {
+import natr from './covers/Naksitrallid.jpg'
+import pipi from './covers/Pipi.jpg'
+import gof from './covers/GobletOfFire.jpg'
+import ReadCount from './ReadCount.js'
+
+
+function Book2({ title, author, genre, picture }) {
     return (
-        <div>
-            <h2>{title}</h2>
-            <h4>{author}</h4>
-            <h6>{genre}</h6>
-                {picture}
+        <div className="rightPanel">
+            <h2 className="books">{title}</h2>
+            <br/>
+            <h4 className="authors">{author}</h4>
+            <br/>
+            <h6 className="genres">{genre}</h6>
+            <br/>
+            <div className="readCount">
+                <ReadCount />
+            </div>
+            <br/>
+            <br/>
+            <img className="coverPic img-fluid max-width: 100%" src={picture} alt={picture} /> 
+            
         </div>
     )
 
