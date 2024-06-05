@@ -2,81 +2,69 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0fr 1fr 1fr;
+  grid-template-rows: 0fr 1fr auto;
   justify-content: center;
   grid-gap: 25px;
   
 }
 .AppL {
-  
-  background-color: rgb(219, 195, 158);
-  box-shadow: 0 4px 8px 0 rgba(241, 74, 74, 0.445), 0 6px 20px 0 rgba(255, 231, 16, 0.692);
+  background-color: #a8a9a9;
+  box-shadow: 0 4px 8px 0 rgba(41, 36, 36, 0.445), 0 6px 20px 0 rgba(26, 25, 24, 0.692);
+  border-radius: 10px;
   width: 500px;
   grid-column: 2/3;
-  
-  
+  align-content: center;
 }
-
 .addBooks {
+  display: flex;
+  flex-wrap: wrap;
   justify-self: center;
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding-left: 2rem;
 }
-
 .clickable {
-  padding-left: 5rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
 }
-
-
 .rightPanel {
   display: flex;
   flex-wrap: wrap;
-  
   flex-direction: row;
   justify-items: center;
   align-items: center;
   align-content: center;
-  
-
-
 }
 .AppR {
   display: flex;
   flex-wrap: wrap;
   width: 500px;
-  background-color: rgb(219, 195, 158);
-  box-shadow: 0 4px 8px 0 rgba(241, 74, 74, 0.445), 0 6px 20px 0 rgba(255, 231, 16, 0.692);
+  background-color: #a8a9a9;
+  box-shadow: 0 4px 8px 0 rgba(41, 36, 36, 0.445), 0 6px 20px 0 rgba(26, 25, 24, 0.692);
   grid-column: 3/4;
   justify-content: center;
   align-content: center;
-
+  border-radius: 10px;
 }
-
 .askForDetails {
   justify-self: center;
   text-align: center;
   padding-left: 1rem;
   padding-top: 2rem;
-  color: brown;
+  color: #252729;
 }
-
 .readCounter {
   padding-top: 10px;
   display: inline-flex;
   justify-content: space-between;
 }
-
 .zeroing{
   padding: 5px;
   padding-right: 10px;
 }
-
 .countAmount {
   padding: 5px;
   color: brown;
-  
 }
-
 .addingToCount {
   padding: 5px;
   padding-left: 10px;
@@ -88,24 +76,24 @@
 }
 .books {
   align-self: flex-start;
-  color: rgb(116, 89, 40);
+  color: #161d24;
   padding: 5px;
 }
 .authors {
   
   align-self: center;
-  color: brown;
+  color: #253d55;
   padding: 5px;
 }
 .genres {
   
   align-self: center;
-  color: rgb(146, 89, 3);
+  color: #4f7397;
   padding: 5px;
 }
 .Heading {
   padding-top: 50px;
-  color: rgb(31, 28, 25);
+  color: #bebebf;
   height: 150px;
   grid-column: 2/3;
 }
@@ -114,12 +102,22 @@ h1 {
   padding-bottom: 0;
 }
 
- /*.bookPanel {
-  text-align: center;
-  justify-self: center;
-  align-items: center;
   
-} */
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+  
+
 
 
     

@@ -6,13 +6,9 @@ import pipi from './covers/Pipi.jpg'
 import gof from './covers/GobletOfFire.jpg'
 import ReadCount from './ReadCount.js';
 import AddNewBook from './AddNewBook.js';
-
-
 import { useState } from 'react';
 
 function App() {
-
-
   const [books, setBooks] = useState([
     {
       title: 'Pipi Pikksukk',
@@ -33,7 +29,6 @@ function App() {
       author: 'J. K. Rowling',
       genre: 'Fantasy',
       picture: gof
-    
     }
   ]);
 
@@ -50,24 +45,17 @@ function App() {
     
     setBooks([...books, newBook])
   };
+    
     const handleClick = (book) => {
       setSelectedBook(book);
     };
-
-
-
-  
-
- 
-  
-
 return (
  
  <div className="container">
-   
    <h1 className="Heading">The Library</h1>
    <div className="leftPanel AppL col-6 ">
       <div classname="addBooks">
+        <h4 className="clickable">Add a new book to the library</h4>
         <AddNewBook addBook={addBook} />
       </div>
       <div className="clickable">
@@ -79,10 +67,7 @@ return (
             ))
           }
       </div>
-     
    </div>
-     
-     
     <div className="rightPanel AppR col-6">
       {selectedBook ? (
           <Book2
@@ -91,7 +76,6 @@ return (
           genre={selectedBook.genre}
           picture={selectedBook.picture}
           />
-          
         ) : (
           <div className="askForDetails"><h4>Select a book to see details</h4></div>
         )}
@@ -99,6 +83,24 @@ return (
  </div>
 );
 }
+   
+
+
+          
+     
+
+
+
+  
+
+
+    
+
+ 
+  
+
+     
+     
         
   
 

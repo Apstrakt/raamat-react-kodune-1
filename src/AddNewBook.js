@@ -27,7 +27,7 @@ function AddNewBook({addBook}) {
     return (
 
         <>
-        <div className="container row">
+        <div className="container row clickable">
             <input 
                 className="col-12 col-sm-12" 
                 placeholder="Book title"
