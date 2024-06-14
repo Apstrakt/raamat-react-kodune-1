@@ -1,4 +1,3 @@
-import ReadCount from "./ReadCount.js";
 import { useState } from "react";
 
 function Book({ booksReal }) {
