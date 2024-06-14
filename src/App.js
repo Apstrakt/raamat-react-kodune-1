@@ -1,11 +1,11 @@
 import "./App.css";
 import Book from "./Book.js";
 import Book2 from "./Book2.js";
-eslint-disable-next-line no-unused-vars
+//eslint-disable-next-line no-unused-vars
 import natr from "./covers/Naksitrallid.jpg";
-eslint-disable-next-line no-unused-vars
+//eslint-disable-next-line no-unused-vars
 import pipi from "./covers/Pipi.jpg";
-eslint-disable-next-line no-unused-vars
+//eslint-disable-next-line no-unused-vars
 import gof from "./covers/GobletOfFire.jpg";
 
 import AddNewBook from "./AddNewBook.js";
